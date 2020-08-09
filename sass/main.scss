@@ -1,0 +1,33 @@
+@import "./base/fonts";
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./components/page-header";
+@import "./components/page-main";
+@import "./components/sec-hero";
+@import "./components/sec-feature";
+@import "./components/sec-exemples";
+@import "./components/sec-team";
+@import "./components/sec-clients";
+@import "./components/page-footer";
+@import "./components/modal";
+@import "./components/form";
+@import "./components/portfolio";
+
+// @mixin centeredFlex($type: flex) {
+//   display: $type;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// p {
+//   @include centeredFlex();
+// }
+
+// div {
+//   @include centeredFlex();
+// }
+
+// button {
+//   @include centeredFlex(inline-flex);
+// }
