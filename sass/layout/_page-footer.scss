@@ -41,37 +41,14 @@
   }
 
   .google-map {
-    font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71px;
-    letter-spacing: 0.03em;
     color: $primary-white-color;
   }
 
   .contacts-text {
-    display: block;
-    font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
-}
-
-// Subtitle
-
-.subtitle {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 1.14;
-  font-weight: 700;
-  color: $primary-white-color;
-  text-transform: uppercase;
 }
 
 // Join
@@ -79,24 +56,22 @@
 .join {
   margin-right: 94px;
 
-  .join-set {
+  &-set {
     display: flex;
 
     .item:not(:last-child) {
       margin-right: 10px;
     }
+
     .button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex();
       width: 44px;
       height: 44px;
       border-radius: 50%;
       background-color: rgba(255, 255, 255, 0.1);
       background-repeat: no-repeat;
 
-      transform: background-color;
-      transition: background-color 250ms $timing-function;
+      @include transition(background-color);
     }
 
     & .button:hover,

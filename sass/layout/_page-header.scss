@@ -59,7 +59,7 @@
     letter-spacing: 0.02em;
     text-decoration: none;
 
-    transition: color 250ms $timing-function;
+    @include transition(color);
 
     &:hover,
     &:focus {
@@ -104,7 +104,7 @@
     color: $primary-text-color;
     text-decoration: none;
 
-    transition: color 250ms $timing-function;
+    @include transition(color);
 
     &:hover,
     &:focus {
@@ -116,7 +116,7 @@
       margin-right: 10px;
       fill: $primary-text-color;
 
-      transition: fill 250ms $timing-function;
+      @include transition(fill);
     }
 
     &:hover .link-icon,

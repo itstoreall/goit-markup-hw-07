@@ -1,4 +1,4 @@
-// Exemples
+// Clients
 
 .clients-list {
   display: flex;
@@ -8,15 +8,13 @@
   }
 
   & .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex();
     width: 170px;
     height: 90px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
 
-    transition: border-color 250ms $timing-function;
+    @include transition(border-color);
 
     &:hover,
     &:focus {
@@ -26,7 +24,7 @@
     .button-icon {
       fill: #afb1b8;
 
-      transition: fill 250ms $timing-function;
+      @include transition(fill);
     }
   }
 

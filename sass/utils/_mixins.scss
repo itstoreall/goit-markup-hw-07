@@ -1,10 +1,9 @@
-@mixin centeredFlex($type: flex) {
+@mixin flex($type: flex, $x: center, $y: center) {
   display: $type;
-  justify-content: center;
-  align-items: center;
+  justify-content: $x;
+  align-items: $y;
 }
 
-@mixin bordered($color: black, $type: solid) {
-  border-top: 1px $type $color;
-  border-bottom: 1px $type $color;
+@mixin transition($property) {
+  transition: $property $duration $timing-function;
 }
